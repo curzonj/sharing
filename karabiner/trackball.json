@@ -1,0 +1,43 @@
+{
+    "description": "Trackball: swap button1 and button2",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "identifiers": [
+                        {
+                            "product_id": 8264,
+                            "vendor_id": 1149
+                        }
+                    ],
+                    "type": "device_if"
+                }
+            ],
+            "from": {
+                "modifiers": { "optional": ["any"] },
+                "pointing_button": "button1"
+            },
+            "to": [{ "pointing_button": "button2" }],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "identifiers": [
+                        {
+                            "product_id": 8264,
+                            "vendor_id": 1149
+                        }
+                    ],
+                    "type": "device_if"
+                }
+            ],
+            "from": {
+                "modifiers": { "optional": ["any"] },
+                "pointing_button": "button2"
+            },
+            "to": [{ "pointing_button": "button1" }],
+            "type": "basic"
+        }
+    ]
+}
